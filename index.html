@@ -1,0 +1,685 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Explorer - Discover Your Next Adventure</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="images/logo.jpeg" alt="Travel Explorer Logo">
+                <span>Travel Explorer</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="#destinations">Destinations</a></li>
+                <li><a href="#packages">Packages</a></li>
+                <li><a href="#blog">Travel Blog</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="nav-buttons">
+                <button class="btn btn-outline">Login</button>
+                <button class="btn btn-primary">Sign Up</button>
+            </div>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Explore the World with Us</h1>
+            <p>Discover amazing places, create unforgettable memories</p>
+            
+            <div class="search-container">
+                <div class="search-box">
+                    <div class="search-item">
+                        <label>Destination</label>
+                        <input type="text" placeholder="Where are you going?">
+                    </div>
+                    <div class="search-item">
+                        <label>Check In</label>
+                        <input type="date">
+                    </div>
+                    <div class="search-item">
+                        <label>Check Out</label>
+                        <input type="date">
+                    </div>
+                    <div class="search-item">
+                        <label>Travelers</label>
+                        <select>
+                            <option>1 Adult</option>
+                            <option>2 Adults</option>
+                            <option>2 Adults, 1 Child</option>
+                            <option>2 Adults, 2 Children</option>
+                            <option>More options</option>
+                        </select>
+                    </div>
+                    <button class="btn btn-primary search-btn">Search</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="popular" class="popular-destinations">
+        <div class="container">
+            <div class="section-header">
+                <h2>Popular Destinations</h2>
+                <p>Explore our most visited places around the world</p>
+            </div>
+            
+            <div class="destination-grid">
+                <div class="destination-card">
+                    <div class="destination-image">
+                        <img src="eiffil.webp" alt="Paris, France">
+                        <div class="destination-badge">Most Popular</div>
+                    </div>
+                    <div class="destination-content">
+                        <h3>Paris, France</h3>
+                        <div class="destination-meta">
+                            <span><img src="map-pin.png" alt="Location">Europe</span>
+                            <span><img src="star.png" alt="Rating">4.8 (2.5k)</span>
+                        </div>
+                        <p>Experience the city of love with its iconic Eiffel Tower, world-class museums, and charming cafés.</p>
+                        <div class="destination-price">
+                            <span class="price">$1,200</span>
+                            <span class="duration">7 Days Tour</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="destination-card">
+                    <div class="destination-image">
+                        <img src="bali.webp" alt="Bali, Indonesia">
+                    </div>
+                    <div class="destination-content">
+                        <h3>Bali, Indonesia</h3>
+                        <div class="destination-meta">
+                            <span><img src="map-pin.png" alt="Location">Asia</span>
+                            <span><img src="star.png" alt="Rating">4.9 (3.1k)</span>
+                        </div>
+                        <p>Discover tropical paradise with stunning beaches, lush rice terraces, and vibrant cultural experiences.</p>
+                        <div class="destination-price">
+                            <span class="price">$950</span>
+                            <span class="duration">5 Days Tour</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="destination-card">
+                    <div class="destination-image">
+                        <img src="s.avif" alt="Santorini, Greece">
+                    </div>
+                    <div class="destination-content">
+                        <h3>Santorini, Greece</h3>
+                        <div class="destination-meta">
+                            <span><img src="map-pin.png" alt="Location">Europe</span>
+                            <span><img src="star.png" alt="Rating">4.7 (1.8k)</span>
+                        </div>
+                        <p>Enjoy breathtaking sunsets, white-washed buildings, and crystal-clear waters on this magical island.</p>
+                        <div class="destination-price">
+                            <span class="price">$1,400</span>
+                            <span class="duration">6 Days Tour</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="destination-card">
+                    <div class="destination-image">
+                        <img src="new-york.jpeg" alt="New York, USA">
+                    </div>
+                    <div class="destination-content">
+                        <h3>New York, USA</h3>
+                        <div class="destination-meta">
+                            <span><img src="map-pin.png" alt="Location">North America</span>
+                            <span><img src="star.png" alt="Rating">4.6 (3.2k)</span>
+                        </div>
+                        <p>Explore the Big Apple with its iconic skyline, Broadway shows, and diverse neighborhoods.</p>
+                        <div class="destination-price">
+                            <span class="price">$1,100</span>
+                            <span class="duration">5 Days Tour</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="destination-card">
+                    <div class="destination-image">
+                        <img src="tokyo.webp" alt="Tokyo, Japan">
+                    </div>
+                    <div class="destination-content">
+                        <h3>Tokyo, Japan</h3>
+                        <div class="destination-meta">
+                            <span><img src="map-pin.png" alt="Location">Asia</span>
+                            <span><img src="star.png" alt="Rating">4.8 (2.9k)</span>
+                        </div>
+                        <p>Immerse yourself in a blend of traditional culture and futuristic technology in Japan's capital.</p>
+                        <div class="destination-price">
+                            <span class="price">$1,350</span>
+                            <span class="duration">7 Days Tour</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="destination-card">
+                    <div class="destination-image">
+                        <img src="Rio.jpg" alt="Rio de Janeiro, Brazil">
+                    </div>
+                    <div class="destination-content">
+                        <h3>Rio de Janeiro, Brazil</h3>
+                        <div class="destination-meta">
+                            <span><img src="map-pin.png" alt="Location">South America</span>
+                            <span><img src="images/star.png" alt="Rating">4.7 (2.1k)</span>
+                        </div>
+                        <p>Experience vibrant culture, beautiful beaches, and iconic landmarks like Christ the Redeemer.</p>
+                        <div class="destination-price">
+                            <span class="price">$1,150</span>
+                            <span class="duration">6 Days Tour</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="view-all-container">
+                <button class="btn btn-outline view-all-btn">View All Destinations</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="why-us" class="why-choose-us">
+        <div class="container">
+            <div class="section-header">
+                <h2>Why Choose Us</h2>
+                <p>We offer the best experience with our travel packages</p>
+            </div>
+            
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <img src="images/best-price.png" alt="Best Price">
+                    </div>
+                    <h3>Best Price Guarantee</h3>
+                    <p>We guarantee the best prices on all our travel packages. Find it cheaper elsewhere, and we'll match it.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <img src="images/customer-support.png" alt="Customer Service">
+                    </div>
+                    <h3>24/7 Customer Support</h3>
+                    <p>Our dedicated support team is available around the clock to assist you with any questions or concerns.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <img src="images/easy-booking.png" alt="Easy Booking">
+                    </div>
+                    <h3>Easy & Fast Booking</h3>
+                    <p>Our streamlined booking process makes it quick and easy to plan your perfect getaway.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <img src="images/destinations.jpeg" alt="Destinations">
+                    </div>
+                    <h3>100+ Destinations</h3>
+                    <p>With over 100 destinations worldwide, we have the perfect spot for every type of traveler.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="packages" class="travel-packages">
+        <div class="container">
+            <div class="section-header">
+                <h2>Special Travel Packages</h2>
+                <p>Exclusive deals and packages for unforgettable experiences</p>
+            </div>
+            
+            <div class="packages-tabs">
+                <button class="tab-btn active" data-tab="all">All Packages</button>
+                <button class="tab-btn" data-tab="family">Family</button>
+                <button class="tab-btn" data-tab="honeymoon">Honeymoon</button>
+                <button class="tab-btn" data-tab="adventure">Adventure</button>
+                <button class="tab-btn" data-tab="beach">Beach</button>
+            </div>
+            
+            <div class="packages-grid">
+                <div class="package-card" data-category="family beach">
+                    <div class="package-image">
+                        <img src="images/maldives.jpg" alt="Maldives Family Package">
+                        <div class="package-discount">20% OFF</div>
+                    </div>
+                    <div class="package-content">
+                        <div class="package-rating">
+                            <span class="stars">★★★★★</span>
+                            <span class="review-count">(48 Reviews)</span>
+                        </div>
+                        <h3>Maldives Family Package</h3>
+                        <p class="package-description">Enjoy a perfect family getaway with pristine beaches and crystal-clear waters.</p>
+                        <div class="package-details">
+                            <div class="detail-item">
+                                <img src="images/calender.png" alt="Duration">
+                                <span>7 Days / 6 Nights</span>
+                            </div>
+                            <div class="detail-item">
+                                <img src="images/people.png" alt="People">
+                                <span>Max People: 4</span>
+                            </div>
+                            <div class="detail-item">
+                                <img src="images/location.png" alt="Location">
+                                <span>Maldives</span>
+                            </div>
+                        </div>
+                        <div class="package-footer">
+                            <div class="package-price">
+                                <span class="old-price">$2,800</span>
+                                <span class="new-price">$2,240</span>
+                            </div>
+                            <button class="btn btn-primary">Book Now</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="package-card" data-category="honeymoon beach">
+                    <div class="package-image">
+                        <img src="images/bora.avif" alt="Bora Bora Honeymoon">
+                    </div>
+                    <div class="package-content">
+                        <div class="package-rating">
+                            <span class="stars">★★★★★</span>
+                            <span class="review-count">(36 Reviews)</span>
+                        </div>
+                        <h3>Bora Bora Honeymoon</h3>
+                        <p class="package-description">The perfect romantic getaway with overwater bungalows and stunning sunsets.</p>
+                        <div class="package-details">
+                            <div class="detail-item">
+                                <img src="images/calendar.png" alt="Duration">
+                                <span>8 Days / 7 Nights</span>
+                            </div>
+                            <div class="detail-item">
+                                <img src="images/people.png" alt="People">
+                                <span>Max People: 2</span>
+                            </div>
+                            <div class="detail-item">
+                                <img src="images/location.png" alt="Location">
+                                <span>French Polynesia</span>
+                            </div>
+                        </div>
+                        <div class="package-footer">
+                            <div class="package-price">
+                                <span class="new-price">$3,450</span>
+                            </div>
+                            <button class="btn btn-primary">Book Now</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="package-card" data-category="adventure">
+                    <div class="package-image">
+                        <img src="images/costa.avif" alt="Costa Rica Adventure">
+                        <div class="package-discount">15% OFF</div>
+                    </div>
+                    <div class="package-content">
+                        <div class="package-rating">
+                            <span class="stars">★★★★☆</span>
+                            <span class="review-count">(29 Reviews)</span>
+                        </div>
+                        <h3>Costa Rica Adventure</h3>
+                        <p class="package-description">Explore rainforests, volcanoes, and wildlife in this thrilling adventure package.</p>
+                        <div class="package-details">
+                            <div class="detail-item">
+                                <img src="images/calendar.png" alt="Duration">
+                                <span>10 Days / 9 Nights</span>
+                            </div>
+                            <div class="detail-item">
+                                <img src="images/people.png" alt="People">
+                                <span>Max People: 8</span>
+                            </div>
+                            <div class="detail-item">
+                                <img src="images/location.png" alt="Location">
+                                <span>Costa Rica</span>
+                            </div>
+                        </div>
+                        <div class="package-footer">
+                            <div class="package-price">
+                                <span class="old-price">$1,950</span>
+                                <span class="new-price">$1,658</span>
+                            </div>
+                            <button class="btn btn-primary">Book Now</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="package-card" data-category="family adventure">
+                    <div class="package-image">
+                        <img src="images/yellowstone.jpeg" alt="Yellowstone Family Adventure">
+                    </div>
+                    <div class="package-content">
+                        <div class="package-rating">
+                            <span class="stars">★★★★☆</span>
+                            <span class="review-count">(42 Reviews)</span>
+                        </div>
+                        <h3>Yellowstone Family Adventure</h3>
+                        <p class="package-description">Discover the wonders of America's first national park with the whole family.</p>
+                        <div class="package-details">
+                            <div class="detail-item">
+                                <img src="images/calendar.png" alt="Duration">
+                                <span>6 Days / 5 Nights</span>
+                            </div>
+                            <div class="detail-item">
+                                <img src="images/people.png" alt="People">
+                                <span>Max People: 6</span>
+                            </div>
+                            <div class="detail-item">
+                                <img src="images/location.png" alt="Location">
+                                <span>United States</span>
+                            </div>
+                        </div>
+                        <div class="package-footer">
+                            <div class="package-price">
+                                <span class="new-price">$1,890</span>
+                            </div>
+                            <button class="btn btn-primary">Book Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="view-all-container">
+                <button class="btn btn-outline view-all-btn">View All Packages</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="testimonials" class="testimonials">
+        <div class="container">
+            <div class="section-header">
+                <h2>What Our Travelers Say</h2>
+                <p>Real experiences from our satisfied customers</p>
+            </div>
+            
+            <div class="testimonial-slider">
+                <div class="testimonial-slide active">
+                    <div class="testimonial-content">
+                        <div class="quote">"Our trip to Japan was absolutely amazing! Travel Explorer took care of every detail, from flights to accommodations to local guides. We didn't have to worry about anything and could just enjoy our vacation. Highly recommended!"</div>
+                        <div class="testimonial-author">
+                            <img src="images/testmonials1.jpeg" alt="Sarah Johnson">
+                            <div class="author-info">
+                                <h4>Sarah Johnson</h4>
+                                <p>Tokyo, Japan Tour</p>
+                                <div class="rating">★★★★★</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-slide">
+                    <div class="testimonial-content">
+                        <div class="quote">"The Costa Rica adventure package exceeded all our expectations. The activities were well-planned, the guides were knowledgeable, and the accommodations were perfect. Our family had the time of our lives zip-lining through the rainforest and spotting wildlife!"</div>
+                        <div class="testimonial-author">
+                            <img src="images/testmonial2.jpeg" alt="Michael Rodriguez">
+                            <div class="author-info">
+                                <h4>Michael Rodriguez</h4>
+                                <p>Costa Rica Adventure</p>
+                                <div class="rating">★★★★★</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-slide">
+                    <div class="testimonial-content">
+                        <div class="quote">"Our honeymoon in Bora Bora was like a dream come true. The overwater bungalow was stunning, and the private dinner on the beach was so romantic. Travel Explorer thought of every detail to make our trip special. We'll definitely book with them again for our anniversary!"</div>
+                        <div class="testimonial-author">
+                            <img src="images/testmonial3.jpeg" alt="Emily and David Chen">
+                            <div class="author-info">
+                                <h4>Emily and David Chen</h4>
+                                <p>Bora Bora Honeymoon</p>
+                                <div class="rating">★★★★★</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="testimonial-controls">
+                <button class="testimonial-btn prev-btn">❮</button>
+                <div class="testimonial-dots">
+                    <span class="dot active" data-slide="0"></span>
+                    <span class="dot" data-slide="1"></span>
+                    <span class="dot" data-slide="2"></span>
+                </div>
+                <button class="testimonial-btn next-btn">❯</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="blog" class="travel-blog">
+        <div class="container">
+            <div class="section-header">
+                <h2>Travel Tips & Articles</h2>
+                <p>Inspiration and advice for your next adventure</p>
+            </div>
+            
+            <div class="blog-grid">
+                <div class="blog-card">
+                    <div class="blog-image">
+                        <img src="images/blog1.jpeg" alt="Packing Tips">
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <span class="blog-date">June 15, 2025</span>
+                            <span class="blog-category">Travel Tips</span>
+                        </div>
+                        <h3>10 Essential Packing Tips for Long-Term Travel</h3>
+                        <p>Learn how to pack efficiently for extended trips without overpacking or missing essentials.</p>
+                        <a href="#" class="read-more">Read More</a>
+                    </div>
+                </div>
+                
+                <div class="blog-card">
+                    <div class="blog-image">
+                        <img src="images/blog2.jpg" alt="Hidden Gems">
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <span class="blog-date">May 28, 2025</span>
+                            <span class="blog-category">Destinations</span>
+                        </div>
+                        <h3>5 Hidden Gems in Europe You Need to Visit</h3>
+                        <p>Discover lesser-known but equally beautiful European destinations away from the tourist crowds.</p>
+                        <a href="#" class="read-more">Read More</a>
+                    </div>
+                </div>
+                
+                <div class="blog-card">
+                    <div class="blog-image">
+                        <img src="images/blog3.webp" alt="Solo Travel">
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <span class="blog-date">April 10, 2025</span>
+                            <span class="blog-category">Solo Travel</span>
+                        </div>
+                        <h3>The Ultimate Guide to Solo Travel: Tips and Destinations</h3>
+                        <p>Everything you need to know about traveling alone, from safety tips to the best destinations.</p>
+                        <a href="#" class="read-more">Read More</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="view-all-container">
+                <button class="btn btn-outline view-all-btn">View All Articles</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="newsletter" class="newsletter">
+        <div class="container">
+            <div class="newsletter-content">
+                <div class="newsletter-text">
+                    <h2>Subscribe to Our Newsletter</h2>
+                    <p>Get exclusive deals, travel tips, and updates delivered straight to your inbox.</p>
+                </div>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Enter your email address" required>
+                    <button type="submit" class="btn btn-primary">Subscribe</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Contact Us</h2>
+                <p>Have questions? We're here to help with your travel plans</p>
+            </div>
+            
+            <div class="contact-container">
+                <div class="contact-info">
+                    <div class="info-item">
+                        <div class="info-icon">
+                            <img src="images/location.png" alt="Location">
+                        </div>
+                        <div class="info-content">
+                            <h3>Our Location</h3>
+                            <p>123 Travel Street, Suite 456<br>New York, NY 10001</p>
+                        </div>
+                    </div>
+                    
+                    <div class="info-item">
+                        <div class="info-icon">
+                            <img src="images/email-icon2.png" alt="Email">
+                        </div>
+                        <div class="info-content">
+                            <h3>Email Us</h3>
+                            <p>info@travelexplorer.com<br>bookings@travelexplorer.com</p>
+                        </div>
+                    </div>
+                    
+                    <div class="info-item">
+                        <div class="info-icon">
+                            <img src="images/phone-icon.avif" alt="Phone">
+                        </div>
+                        <div class="info-content">
+                            <h3>Call Us</h3>
+                            <p>+1 (555) 123-4567<br>+1 (555) 987-6543</p>
+                        </div>
+                    </div>
+                    
+                    <div class="info-item">
+                        <div class="info-icon">
+                            <img src="images/hours-icon.png" alt="Hours">
+                        </div>
+                        <div class="info-content">
+                            <h3>Working Hours</h3>
+                            <p>Monday-Friday: 9am - 6pm<br>Saturday: 10am - 4pm</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-form-container">
+                    <form id="contactForm" class="contact-form">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="name">Your Name</label>
+                                <input type="text" id="name" name="name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Your Email</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <input type="text" id="subject" name="subject" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Your Message</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-about">
+                    <div class="footer-logo">
+                        <img src="images/logo.jpeg" alt="Travel Explorer Logo">
+                        <span>Travel Explorer</span>
+                    </div>
+                    <p>We're dedicated to bringing you the best travel experiences around the world. Our expert team curates unforgettable journeys tailored to your preferences.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link">Facebook</a>
+                        <a href="#" class="social-link">Twitter</a>
+                        <a href="#" class="social-link">Instagram</a>
+                        <a href="#" class="social-link">Pinterest</a>
+                    </div>
+                </div>
+                
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#destinations">Destinations</a></li>
+                        <li><a href="#packages">Tour Packages</a></li>
+                        <li><a href="#blog">Travel Blog</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#contact">Contact Us</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-links">
+                    <h3>Support</h3>
+                    <ul>
+                        <li><a href="#">Customer Support</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms & Conditions</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Travel Insurance</a></li>
+                        <li><a href="#">Refund Policy</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-newsletter">
+                    <h3>Newsletter</h3>
+                    <p>Subscribe to get special offers and travel updates.</p>
+                    <form class="footer-newsletter-form">
+                        <input type="email" placeholder="Your Email Address" required>
+                        <button type="submit" class="btn btn-primary">Subscribe</button>
+                    </form>
+                    <div class="payment-methods">
+                        <span>We Accept:</span>
+                        <div class="payment-icons">
+                            <img src="images/visa.png" alt="Visa">
+                            <img src="images/mastercard.png" alt="Mastercard">
+                            <img src="images/amex.png" alt="American Express">
+                            <img src="images/paypal.png" alt="PayPal">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 Travel Explorer. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
